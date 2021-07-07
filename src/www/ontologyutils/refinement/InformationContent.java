@@ -100,8 +100,9 @@ public class InformationContent {
 	 * @return
 	 */
 	public double informationContent(OWLClassExpression c){
-//		return Math.log(count_descendants(c))/Math.log(num_subconcepts);
-		return 1 - Math.log(count_descendants(c))/Math.log(count_descendants(TOP));
+		return Math.log(count_descendants(c))/Math.log(count_descendants(TOP));
+		// return Math.log(count_descendants(c))/Math.log(num_subconcepts);
+		// return 1 - Math.log(count_descendants(c))/Math.log(count_descendants(TOP));
 	}
 	
 //	private void compute_ICs(){
